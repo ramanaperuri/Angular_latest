@@ -1,0 +1,24 @@
+<app-home></app-home>
+<app-upload></app-upload>
+
+<!--<div style="margin-bottom: 30px; text-align: center;">
+    <input class="ng-hide" id="input-file-id" multiple type="file" />
+    <button mat-flat-button color="primary" type="submit">Upload a JD</button>
+</div> -->
+
+<div style="border-radius: 10px; width: 100px">
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th> Job Description </th>
+            <th> Action </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let element of elements ">
+            <td>{{ element.jd}}</td>
+            <td><mat-icon>eco</mat-icon></td>
+        </tr>
+    </tbody>
+</table>
+</div>

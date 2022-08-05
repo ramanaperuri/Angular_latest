@@ -1,0 +1,41 @@
+<div class="somecss">
+<h2> Employee List </h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th> Id </th>
+            <th> First name </th>
+            <th> Last name </th>
+            <th> Email </th>
+            <th> Total Pages </th>
+            <th> Page </th>
+            <th> Avatar </th>
+            <th> Id </th>
+            <th> First name </th>
+            <th> Last name </th>
+            <th> Email </th>
+            <th> Total Pages </th>
+            <th> Page </th>
+            <th> Avatar </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let res of reqres">
+            <td>{{ res.id}}</td>
+            <td>{{ res.first_name}}</td>
+            <td>{{ res.last_name}}</td>
+            <td>{{ res.email}}</td>
+            <td> {{variable.total_pages }}</td>
+            <td>{{ variable.page}}</td>
+            <td>{{res.avatar}}</td>
+            <td>{{ res.id}}</td>
+            <td>{{ res.first_name}}</td>
+            <td>{{ res.last_name}}</td>
+            <td>{{ res.email}}</td>
+            <td> {{variable.total_pages }}</td>
+            <td>{{ variable.page}}</td>
+            <td>{{res.avatar}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>

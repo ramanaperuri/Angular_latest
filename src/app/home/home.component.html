@@ -1,0 +1,75 @@
+<!-- <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <ul class = "navbar-nav">
+      <li class="nav-item">
+        <a routerLink="app-home" routerLinkActive="active" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="candidates" routerLinkActive="active" class="nav-link">Candidates</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="jobs" routerLinkActive="active" class="nav-link">Jobs</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="app-resume-checker" routerLinkActive="active" class="nav-link">Resume Checker</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="app-login" routerLinkActive="active" class="nav-link">Contact</a>
+      </li>
+    </ul>
+</nav> 
+
+<div class="bg">
+<mat-tab-group animationDuration="0ms">
+    <mat-tab label="Home">
+        <mat-card class="example-card">
+            <mat-card-title>Scaledge AI platform</mat-card-title>
+            <mat-card-subtitle>For a faster recruitment</mat-card-subtitle>
+            <mat-card-content>
+              <p>This card  gives info the about the AI Platform.</p>
+              <p>{{longText}}</p>
+            </mat-card-content>
+          </mat-card>
+    </mat-tab>
+    <mat-tab label="Candidates"><a routerLink="/login">Back to login</a></mat-tab>
+    
+    <mat-tab label="Jobs">
+
+    </mat-tab>
+    <mat-tab label="Resume_checker">
+
+    </mat-tab>
+  </mat-tab-group>
+  
+</div>
+
+-->
+
+<mat-toolbar color="primary" class="mat-elevation-z8">
+    <span class="material-icons">person_search</span>
+    <span> Resume Application</span>
+    
+    <div class="spacer"></div>
+    
+    <a mat-raised-button routerLink="/home-content" style="margin: 0 5px;" routerLinkActive="active">Home</a>
+    <a mat-raised-button routerLink="/candidates-detail" style="margin: 0 5px;" routerLinkActive="active">Candidates</a>
+    <a mat-raised-button routerLink="/jobs" style="margin: 0 5px;" routerLinkActive="active">Jobs</a>
+    <a mat-raised-button routerLink="/checker" style="margin: 0 5px;" routerLinkActive="active">Resume checker</a>
+    <a mat-raised-button routerLink="/logout" style="margin: 0 5px;" color="accent">Logout</a>
+
+</mat-toolbar>
+
+<!--
+    <p>
+    <mat-toolbar>
+        <section>
+            
+            <div class="example-button-row">
+              <button mat-raised-button>Home</button>
+              <button mat-raised-button color="primary">Candidates</button>
+              <button mat-raised-button>Jobs</button>
+              <button mat-raised-button color="primary">Resume_checker</button>
+            </div>
+          </section>
+    </mat-toolbar>
+  </p>
+-->
